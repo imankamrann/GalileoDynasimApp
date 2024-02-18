@@ -5,6 +5,7 @@ import Footer from "../components/Footer.astro";
 import SideBar from "../components/SideBar.astro";
 import { ViewTransitions } from "astro:transitions";
 
+
 import { SITE_TITLE, SITE_DESCRIPTION, TRANSITION_API } from "../config";
 
 const {
@@ -15,6 +16,9 @@ const {
   sideBarActiveItemID,
   ogType,
 } = Astro.props;
+
+// const showSidebar = Astro.props.showSidebar ?? true;
+// const showSidebar = false; 
 ---
 
 <!doctype html>
@@ -41,6 +45,7 @@ const {
         </div>
         <Footer />
       </div>
+     
       {includeSidebar && <SideBar sideBarActiveItemID={sideBarActiveItemID} />}
     </div>
   </body>

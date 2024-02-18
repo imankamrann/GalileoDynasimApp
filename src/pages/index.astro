@@ -4,6 +4,7 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 import { getCollection } from "astro:content";
 import createSlug from "../lib/createSlug"
 
+
 const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
 const last_posts = posts.slice(0, 3);
@@ -20,26 +21,25 @@ const last_posts = posts.slice(0, 3);
   <HorizontalCard
     title="Fruit Throw"
     img="/fruitThrow.png"
-    desc="Get started with projectile velocity in Fruit Throw! Calculate the angle, trajectory, and velocity to hit the target. (Make sure to let your enemies know about your feelings using this cool physics projectile trick and a tomato)"
-    url="#"
+    desc="Get started with projectile velocity in Fruit Throw! Calculate the angle, trajectory, and velocity to hit the target. Make sure to let your enemies know about your feelings using this cool physics projectile trick and a tomato."
+    url="/tomatoThrow"
     badge="NEW"
   />
-      <div class="text-xl py-3 font-bold">DYNAMICS</div> 
+    <div class="text-xl py-3 font-bold">DYNAMICS</div> 
   <div class="divider my-0"></div>
   <HorizontalCard
     title="Forces"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    img="/newtonGains.png"
+    desc="Learn about forces and Newton’s Law in Newton’s Gains! Feel the pressure as you flex your physics muscles, applying the principles of forces and motions to conquer each machine and get some gains."
     url="#"
   />
       <div class="text-xl py-3 font-bold">ENERGY & MOMENTUM</div> 
   <div class="divider my-0"></div>
   <HorizontalCard
     title="Rollercoasters"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    img="/rollercoasterSafety.png"
+    desc="Test rollercoasters at a park to learn about the principles of energy and momentum conservation! Control the velocity of rides and make sure energy is conserved throughout the ride to keep the park safe."
     url="#"
-    badge="FOSS"
   />
 
   <!-- <div>

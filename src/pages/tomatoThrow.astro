@@ -1,7 +1,20 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import HorizontalCard from "../components/HorizontalCard.astro";
+import shouldShowComponent from "../components/SideBar.astro";
+
+// const shouldShowComponent = false;
+// const showSidebar = false;
+const { title } = Astro.props;
+const includeSidebar = false;
+
+
+
+
 ---
+
+
+
+
 <!-- 
 <BaseLayout title = "Tomato Throw" sideBarActiveItemID="tomatoThrow">
   <div>
@@ -35,9 +48,9 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 
 
 
-
+<!-- use this one if new doesnt work: -->
   
-<BaseLayout title="Tomato Throw" sideBarActiveItemID="tomatoThrow" style="display: flex; align-items: center; justify-content: center; position: relative;">
+<!-- <BaseLayout title="Tomato Throw" sideBarActiveItemID="tomatoThrow" style="display: flex; align-items: center; justify-content: center; position: relative;">
     
     <div>
          <img  width="225" src="/galileo-logo.svg"/>
@@ -47,9 +60,28 @@ import HorizontalCard from "../components/HorizontalCard.astro";
         <div class="text-3xl font-bold;" style="">Tomato Throw Game!</div>
     </div>
 
-<div style="text-decoration: none; position: absolute; left: 304px; top:-20; padding: 30px;background-color: pink;">
+<div style="text-decoration: none; position: absolute; left: 304px; top:10; padding: 20px;background-color: pink;">
 
-</div>
+</div> -->
+
+<!-- use this one if new doesnt work: ^^^^-->
+
+
+<BaseLayout includeSidebar={false} title="Tomato Throw" sideBarActiveItemID="tomatoThrow" style="display: flex; align-items: center; justify-content: center; position: relative;">
+  {
+    
+      <div>
+        <!-- <img width="225" src="/galileo-logo.svg"  style="text-decoration: none; position: absolute; left: 504px; top: 0; padding: 10px;"/> -->
+        <a href="/" style="text-decoration: none; position: absolute; left: 304px; top: 0; padding: 10px;">
+          <img width="200" src="/fruitThrowBack.svg" alt="Fruit Throw Back">
+        </a>
+        <div class="text-3xl font-bold" style="">Tomato Throw Game!</div>
+      </div>
+
+  <div style="text-decoration: none; position: absolute; left: 304px; top: 10; padding: 20px; background-color: pink;"></div>
+</BaseLayout>
+
+
 
 </BaseLayout>
 

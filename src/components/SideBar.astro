@@ -1,12 +1,24 @@
 ---
 import SideBarFooter from "./SideBarFooter.astro";
-import { Image } from "astro:assets";
+// import { Image } from "astro:assets";
 import SideBarMenu from "./SideBarMenu.astro";
+// const shouldShowComponent = true;
 
-
+// const shouldShowComponent = Astro.props.showComponent ?? true;
+// import showSidebar from "../pages/tomatoThrow.astro";
 const { sideBarActiveItemID } = Astro.props;
----
 
+
+---
+<!-- <script>
+  export const shouldShowComponent = false;
+
+</script> -->
+
+
+
+<!-- { -->
+  // showSidebar && (
 <div class="drawer-side z-40">
   <label for="my-drawer" class="drawer-overlay"></label>
   <aside class="px-2 pt-2 h-auto min-h-full w-[19rem] bg-base-200 text-base-content flex flex-col">
@@ -30,11 +42,14 @@ const { sideBarActiveItemID } = Astro.props;
         <a href="/"></a>
       </div>
     </div>
-    <SideBarMenu sideBarActiveItemID={sideBarActiveItemID} />
-    <SideBarFooter />
-  </aside>
-</div>
 
+    <SideBarMenu sideBarActiveItemID={sideBarActiveItemID} />
+    <SideBarFooter /> 
+  </aside>
+  
+</div>
+//  )
+// }
 
 <style>
 
@@ -55,8 +70,5 @@ const { sideBarActiveItemID } = Astro.props;
     font-weight: bolder;
   }
 </style>
-
-
-
 
 
