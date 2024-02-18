@@ -21,10 +21,16 @@ var render = Render.create({
 });
 
 
-var ground = Bodies.rectangle(200, 200, 200, 60, { isStatic: true });
+var ground = Bodies.rectangle(300, 600, 200, 249, { isStatic: true,
+  render: {
+    sprite: {
+        texture:
+        "/public/fruit_stack.svg"
+    }
+} });
 Composite.add(engine.world, [ ground]);
 
-let tomato = Bodies.circle(200, 165, 35,  {
+let tomato = Bodies.circle(300, 500, 35,  {
   render: {
       sprite: {
           texture:
@@ -100,7 +106,7 @@ function calculateVelocityComponents() {
     Matter.Body.setVelocity( tomato, {x: velocityX, y: -velocityY});
 
     setTimeout(function() {
-    let newTomato = Bodies.circle(200, 165, 35,  {
+    let newTomato = Bodies.circle(300, 500, 35,  {
        render: {
            sprite: {
                texture:
