@@ -1,11 +1,13 @@
 ---
+import TimeLineElement from "../components/cv/TimeLine.astro";
 const { sideBarActiveItemID } = Astro.props;
 const activeClass = "bg-base-300"; // For primary color replace with `active` class
 ---
+<!-- TODO: to change background of linked titles of side bar, change active Class bg colour-->
 
-<ul class="menu grow shrink menu-md overflow-y-auto">
-    <li><a class="py-3 text-base" id="home" href="/">Home</a></li>
-    <!-- <li><a class="py-3 text-base" id="projects" href="/projects">Projects</a></li> -->
+<ul class="menu grow shrink menu-md overflow-y-auto ml-3">
+    <!-- <li><a class="py-3 text-base" id="home" href="/">Home</a></li> 
+    <li><a class="py-3 text-base" id="projects" href="/projects">Projects</a></li> -->
     <!-- <li><a class="py-3 text-base" id="services" href="/services">Services</a></li> -->
     <!-- <li><a class="py-3 text-base" id="store" href="/store">Store</a></li> -->
     <!-- <li><a class="py-3 text-base" id="blog" href="/blog/">Blog</a></li> -->
@@ -17,7 +19,77 @@ const activeClass = "bg-base-300"; // For primary color replace with `active` cl
             target="_blank"
             referrerpolicy="no-referrer-when-downgrade">Contact</a
         >
-    </li> -->
+    </li>
+
+
+</ul>
+<!-- fsfsdf -->
+
+
+
+<!-- kinematics -->
+
+  <div class="mb-1">
+        <div class="text-md w-full font-bold ">KINEMATICS</div>
+  </div>
+<li>
+  <div class="time-line-container grid gap-4 mb-10">
+    <a href="/tomatoThrow">
+    <TimeLineElement
+     title="Tomato Throw"
+    />
+    </a>
+  </div>
+</li>
+<!-- dynamics -->
+  <div class="mb-1">
+        <div class="text-md w-full font-bold ">DYNAMICS</div>
+  </div>
+<li>
+  <div class="time-line-container grid gap-4 mb-10">
+    <TimeLineElement
+         title="Forces"
+    />
+  </div>
+</li>
+<!-- energy --> 
+
+
+  <div class="mb-1">
+        <div class="text-md w-full font-bold ">ENERGY AND MOMENTUM</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <li>
+    <TimeLineElement
+      title="Rollercoasters"
+      subtitle="(Energy Types)"
+    />
+    
+    <TimeLineElement
+       title="Collision"
+    />
+    </li>
+  </div>
+  
+<!-- waves -->
+    <div class="mb-1">
+        <div class="text-md w-full font-bold ">WAVES</div>
+  </div>
+
+  <div class="time-line-container grid gap-4 mb-10">
+    <li>
+    <TimeLineElement
+      title="Skipping Stones"
+      subtitle="(Two Point Interference)"
+    />
+    <TimeLineElement
+       title="SOUND"
+    />
+    </li>
+  </div>
+
+
 </ul>
 
 <script define:vars={{ sideBarActiveItemID: sideBarActiveItemID, activeClass: activeClass }}>

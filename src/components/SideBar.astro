@@ -2,6 +2,8 @@
 import SideBarFooter from "./SideBarFooter.astro";
 import { Image } from "astro:assets";
 import SideBarMenu from "./SideBarMenu.astro";
+
+
 const { sideBarActiveItemID } = Astro.props;
 ---
 
@@ -17,8 +19,11 @@ const { sideBarActiveItemID } = Astro.props;
         </div>
       </a> -->
      <div class="inline-block"> <!-- Use inline-block to place elements on the same line -->
-        <h1 class="redTitle" style="display: inline;">Galileo</h1> <!-- Set display to inline -->
-        <h1 class="purpleTitle" style="display: inline;">Dynasim</h1> <!-- Set display to inline -->
+     <a href="/">
+        <h1 class="gear" style="display: inline;">⚙</h1> <!-- Set display to inline -->
+        <h1 class="redTitle" style="display: inline;">GALILEO</h1> <!-- Set display to inline -->
+        <h1 class="purpleTitle" style="display: inline;">DYNASIM</h1> <!-- Set display to inline -->
+        </a>
       </div>
     </div>
     <SideBarMenu sideBarActiveItemID={sideBarActiveItemID} />
@@ -27,11 +32,21 @@ const { sideBarActiveItemID } = Astro.props;
 </div>
 
 <style>
+
+   .gear {
+    color: red; /* Set the color to red */
+    font-size: xx-large;
+
+  }
   .redTitle {
     color: red; /* Set the color to red */
+    font-size: x-large;
+    font-weight: bolder;
   }
 
   .purpleTitle {
     color: purple; /* Set the color to purple */
+    font-size: x-large;
+    font-weight: bolder;
   }
 </style>

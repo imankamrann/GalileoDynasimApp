@@ -9,13 +9,14 @@ const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueO
 const last_posts = posts.slice(0, 3);
 ---
 
-<BaseLayout sideBarActiveItemID="home">
+<BaseLayout sideBarActiveItemID="kinematics">
 
   <div>
     <div class="text-4xl w-full font-bold mb-2">Physics Activites</div>
+      <div class="divider my-0"></div>
 
   </div>
-    <div class="text-xl py-3 font-bold">Kinematics</div> 
+    <div class="text-xl py-3 font-bold">KINEMATICS</div> 
   <HorizontalCard
     title="Fruit Throw"
     img="/fruitThrow.png"
@@ -23,7 +24,7 @@ const last_posts = posts.slice(0, 3);
     url="#"
     badge="NEW"
   />
-      <div class="text-xl py-3 font-bold">Dynamics</div> 
+      <div class="text-xl py-3 font-bold">DYNAMICS</div> 
   <div class="divider my-0"></div>
   <HorizontalCard
     title="Forces"
@@ -31,7 +32,7 @@ const last_posts = posts.slice(0, 3);
     desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
     url="#"
   />
-      <div class="text-xl py-3 font-bold">Energy & Momentum</div> 
+      <div class="text-xl py-3 font-bold">ENERGY & MOMENTUM</div> 
   <div class="divider my-0"></div>
   <HorizontalCard
     title="Rollercoasters"
