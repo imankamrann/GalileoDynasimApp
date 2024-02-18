@@ -28,14 +28,6 @@ Welcome to our physics learning app! This app provides an engaging and interacti
 
 To get started with the app, simply download the latest release from our GitHub repository and follow the installation instructions in the README file.
 
-## Contributing
-
-We welcome contributions from the community! If you'd like to contribute to the project, please check out our contributing guidelines for more information.
-
-## Feedback and Support
-
-If you have any feedback, suggestions, or issues with the app, please open a new issue on GitHub or reach out to us at support@physicslearningapp.com. We're here to help!
-
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
