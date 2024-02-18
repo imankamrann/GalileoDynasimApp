@@ -2,86 +2,29 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import shouldShowComponent from "../components/SideBar.astro";
 
-// const shouldShowComponent = false;
-// const showSidebar = false;
 const { title } = Astro.props;
 const includeSidebar = false;
-
-
 
 
 ---
 
 
-
-
-<!-- 
-<BaseLayout title = "Tomato Throw" sideBarActiveItemID="tomatoThrow">
-  <div>
-    <div class="text-3xl w-full font-bold mb-5">Tomato Throw Game!</div>
-  </div>
-  <a href="/">
-<img width="200"  src="/fruitThrowBack.svg" alt="Fruit Throw Back">
-</a>
-
-</BaseLayout>
- -->
-
- 
-
-
-  <!-- <div class="navbar">
-    <div class="navbar-start">
-      <label for="my-drawer" class="btn btn-square btn-ghost">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"
-          ><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-        </svg>
-      </label>
-    </div>
-    <div class="navbar-center">
-      <a class="btn btn-ghost normal-case text-xl" href="/">GALILEO DYNASIM</a>
-    </div>
-    <div class="navbar-end"></div>
-  </div> -->
-  
-
-
-
-
-<!-- use this one if new doesnt work: -->
-  
-<!-- <BaseLayout title="Tomato Throw" sideBarActiveItemID="tomatoThrow" style="display: flex; align-items: center; justify-content: center; position: relative;">
-    
-    <div>
-         <img  width="225" src="/galileo-logo.svg"/>
-        <a href="/" style="text-decoration: none; position: absolute; left: 304px; top:0px; padding:10px">
-            <img width="200" src="/fruitThrowBack.svg" alt="Fruit Throw Back">
-        </a>
-        <div class="text-3xl font-bold;" style="">Tomato Throw Game!</div>
-    </div>
-
-<div style="text-decoration: none; position: absolute; left: 304px; top:10; padding: 20px;background-color: pink;">
-
-</div> -->
-
-<!-- use this one if new doesnt work: ^^^^-->
+<div style="background: linear-gradient(to bottom, #4f9bfe, #b9e5ff); padding: 20px;">
 
 
 <BaseLayout includeSidebar={false} title="Tomato Throw" sideBarActiveItemID="tomatoThrow" style="display: flex; align-items: center; justify-content: center; position: relative;">
-  {
-    
-      <div>
-        <!-- <img width="225" src="/galileo-logo.svg"  style="text-decoration: none; position: absolute; left: 504px; top: 0; padding: 10px;"/> -->
-        <a href="/" style="text-decoration: none; position: absolute; left: 304px; top: 0; padding: 10px;">
+  
+      <div  >
+        <img width="225" src="/galileo-logo.svg"  style="text-decoration: none; position: absolute; left: 0; top: 0; padding: 10px;"/>
+        <a href="/" style="text-decoration: none; position: absolute; left: 0; top: 8; padding: 10px;">
           <img width="200" src="/fruitThrowBack.svg" alt="Fruit Throw Back">
         </a>
         <div class="text-3xl font-bold" style="">Tomato Throw Game!</div>
+
       </div>
-
-  <div style="text-decoration: none; position: absolute; left: 304px; top: 10; padding: 20px; background-color: pink;"></div>
-</BaseLayout>
-
-
+</div>
 
 </BaseLayout>
+
+</div>
 
