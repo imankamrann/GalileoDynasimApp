@@ -22,10 +22,13 @@ canvas {
   
 .button {
     color: white;
-  background: orange;
-  border: none;
-  padding: 20px;
-  
+  background: #5B60FF;
+  margin-top: 0px;
+  width: 150px;
+  height: 70px;
+  border-color: white;
+  padding: 10px;
+  border-radius: 20px;
   font-weight: 300;
   font-size: 2em;
   font-family: 'Lato';
@@ -33,6 +36,8 @@ canvas {
   cursor: pointer;
   outline: none;
   z-index: 1;
+  top: 100px;
+  left: 500px;
   /* position: absolute; */
   /* top: 40%; */
   }
@@ -44,52 +49,51 @@ canvas {
     height: 500px;
     position: fixed;
     z-index: 1;
-    top: 50%; /* Adjust top position */
-    left: 50%; /* Adjust left position */
+    top: 50%; 
+    left: 70%; 
     transform: translate(-50%, -50%); /* Center the container */
 }
 
 /* The slider itself */
 .slider {
     -webkit-appearance: none;
-    appearance: none;
-    width: 100%; /* Full-width within container */
-    height: 25px;
-    background: #d3d3d3;
+    appearance:none;
+    width: 100%; 
+    height: 10px;
+    border-radius: 20px;
+    background: white;
     outline: none;
     opacity: 0.7;
     -webkit-transition: .2s;
     transition: opacity .2s;
     position: absolute;
-    bottom: 0; /* Position at the bottom of container */
-    z-index: 1;
+    bottom: 0;
+   z-index: 1;
 }
 
-/* Mouse-over effects */
 .slider:hover {
     opacity: 1;
 }
 
-/* The slider handle */
 .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
     width: 25px;
     height: 25px;
-    background: #4721a7;
+    background: #5B60FF;
     cursor: pointer;
 }
 
 .slider::-moz-range-thumb {
     width: 25px;
     height: 25px;
-    background: #4721a7;
+    background: #5B60FF;
     cursor: pointer;
 }
 
 .slidertxt {
-    font-size: 1em;
-    color:#4721a7;
+    font-size: 1.2em;
+    color:#FFF;
     position: absolute;
     margin-bottom: 30px; /* Adjust as needed */
     margin-left: 50%; /* Center horizontally */
