@@ -16,7 +16,7 @@ var render = Render.create({
     width: window.innerWidth,
     height: window.innerHeight,
     wireframes: false,
-    background: 'white'
+    background: 'lightblue',
   }
 });
 
@@ -52,13 +52,13 @@ Composite.add(engine.world, [floor]);
 var xAxis = Bodies.rectangle(100, window.innerHeight-100, 10000, 10, { 
   render:{
   
-    fillStyle: 'black'
+    fillStyle: 'white'
   },
     isStatic: true });
 var yAxis = Bodies.rectangle(100, 0, 10, 10000, { 
   render:{
   
-    fillStyle: 'black'
+    fillStyle: 'white'
   },isStatic: true });
 Composite.add(engine.world, [xAxis,  yAxis]);
 
