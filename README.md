@@ -1,14 +1,11 @@
-# Physics Learning App: Fun Games for Kinematics, Dynamics, and Energy & Momentum
+# GalileoDynasim: A Dynamic Physics Game for Education
 
-Welcome to our physics learning app! This app provides an engaging and interactive way to learn key concepts in physics such as Kinematics, Dynamics, and Energy & Momentum through fun games and activities.
+Welcome to our physics learning app! This app provides an engaging and interactive way to learn key concepts in physics through simulations with unique concepts.
 
 ## Features
 
-* **Interactive Games:** Enjoy a variety of interactive games designed to illustrate and reinforce concepts in Kinematics, Dynamics, and Energy & Momentum.
-* **Learning Modules:** Explore comprehensive learning modules covering fundamental principles and equations, with clear explanations and examples.
-* **Progress Tracking:** Keep track of your progress as you complete games and modules, and track your improvement over time.
-* **Challenge Mode:** Test your knowledge and skills in challenge mode, where you can compete with friends or challenge yourself to beat your own high scores.
-* **Fun and Engaging:** Learn physics in a fun and engaging way, with colorful graphics, engaging animations, and intuitive gameplay.
+* **Interactive Games:** Enjoy a variety of physics simulations and interactive games designed to teach concepts in Kinematics, Dynamics, and Energy & Momentum.
+* **Learning Modules:** Games cover fundamental principles and equations with clear explanations and examples.
 
 ## Concepts Covered
 
@@ -17,11 +14,11 @@ Welcome to our physics learning app! This app provides an engaging and interacti
 - Explore concepts such as position-time graphs, velocity-time graphs, and equations of motion.
 
 ### Dynamics
-- Understand the principles of force, mass, and acceleration through hands-on activities and challenges.
-- Explore Newton's laws of motion and their applications in real-world scenarios.
+- Understand the principles of force, mass, and acceleration.
+- Explore Newton's laws of motion and their applications.
 
 ### Energy & Momentum
-- Dive into the concepts of energy, work, power, and momentum through engaging games and experiments.
+- Dive into the concepts of energy, work, power, and momentum through experiments.
 - Learn about conservation of energy and momentum, and explore the relationships between kinetic and potential energy.
 
 ## Getting Started
