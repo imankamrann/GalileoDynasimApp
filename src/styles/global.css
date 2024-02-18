@@ -1,3 +1,205 @@
 .time-line-container>div:last-child .education__time>.education__line {
     display: none;
 }
+body {
+    overflow:hidden;
+    margin: 0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(36, 36, 36);
+  /* }
+  body { */
+    text-align: center;
+    /* width: 100%; */
+      /* height: 100%; */
+      /* overflow: hidden; */
+  }
+   
+  canvas {
+    margin: 10px auto;
+  
+  }
+  #tomato{
+      position: absolute;
+      display: none;
+  }
+    
+  .button {
+      color: white;
+    background: orange;
+    border: none;
+    padding: 20px;
+    font-weight: 300;
+    font-size: 2em;
+    font-family: 'Lato';
+    justify-content: center;
+    cursor: pointer;
+    outline: none;
+    z-index: 1;
+    position: absolute;
+    }
+  
+  
+  .time-line-container>div:last-child .education__time>.education__line {
+    display: none;
+}
+body {
+    overflow:hidden;
+    margin: 0;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(36, 36, 36);
+  /* }
+  body { */
+    text-align: center;
+    /* width: 100%; */
+      /* height: 100%; */
+      /* overflow: hidden; */
+  }
+   
+  canvas {
+    margin: 10px auto;
+  
+  }
+  #tomato{
+      position: absolute;
+      display: none;
+  }
+    
+  .button {
+      color: white;
+    background: orange;
+    border: none;
+    padding: 20px;
+    font-weight: 300;
+    font-size: 2em;
+    font-family: 'Lato';
+    justify-content: center;
+    cursor: pointer;
+    outline: none;
+    z-index: 1;
+    position: absolute;
+    }
+  
+  
+  
+    .slidecontainer {
+      width: 25%; /* Width of the outside container */
+      position: absolute;
+      height: 500px;
+      margin-top:200px;
+    }
+    
+    /* The slider itself */
+    .slider {
+      -webkit-appearance: none;  /* Override default CSS styles */
+      appearance: none;
+      /* width: 25%; Full-width */
+      width: 200px;
+      height: 25px; /* Specified height */
+      background: #d3d3d3; /* Grey background */
+      outline: none; /* Remove outline */
+      opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+      -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+      transition: opacity .2s;
+      position: absolute;
+      margin-left: 200px;   
+      margin-top: 200px;
+      z-index: 1;
+    }
+    
+    /* Mouse-over effects */
+    .slider:hover {
+      opacity: 1; /* Fully shown on mouse-over */
+    }
+    
+    /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+    .slider::-webkit-slider-thumb {
+      -webkit-appearance: none; /* Override default look */
+      appearance: none;
+      width: 25px; /* Set a specific slider handle width */
+      height: 25px; /* Slider handle height */
+      background: #4721a7; /* Green background */
+      cursor: pointer; /* Cursor on hover */
+    }
+    
+    .slider::-moz-range-thumb {
+      width: 25px; /* Set a specific slider handle width */
+      height: 25px; /* Slider handle height */
+      background: #4721a7; /* Green background */
+      cursor: pointer; /* Cursor on hover */
+    }
+   .slidercontainer p {
+      font-size: 1em;
+      color:#4721a7;
+      position: absolute;
+      margin-left: 600px;
+      margin-top: 200px;
+    }
+
+    canvas {
+        left: 20%;
+        position:absolute;
+        top: 8%;
+    }
+    .slidecontainer {
+      width: 25%; /* Width of the outside container */
+      position: absolute;
+      height: 500px;
+    }
+    
+    /* The slider itself */
+    .slider {
+      -webkit-appearance: none;  /* Override default CSS styles */
+      appearance: none;
+      /* width: 25%; Full-width */
+      width: 200px;
+      height: 25px; /* Specified height */
+      background: #d3d3d3; /* Grey background */
+      outline: none; /* Remove outline */
+      opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+      -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+      transition: opacity .2s;
+      position: absolute;
+      /* margin-left: 500px; */
+      margin-top: 200px;
+      z-index: 1;
+    }
+    
+    /* Mouse-over effects */
+    .slider:hover {
+      opacity: 1; /* Fully shown on mouse-over */
+    }
+    
+    /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+    .slider::-webkit-slider-thumb {
+      -webkit-appearance: none; /* Override default look */
+      appearance: none;
+      width: 25px; /* Set a specific slider handle width */
+      height: 25px; /* Slider handle height */
+      background: #4721a7; /* Green background */
+      cursor: pointer; /* Cursor on hover */
+    }
+    
+    .slider::-moz-range-thumb {
+      width: 25px; /* Set a specific slider handle width */
+      height: 25px; /* Slider handle height */
+      background: #4721a7; /* Green background */
+      cursor: pointer; /* Cursor on hover */
+    }
+   .slidertxt {
+      font-size: 1em;
+      color:#4721a7;
+      position: absolute;
+      /* margin-left: 300px; */
+      /* margin-top: 200px; */
+      z-index: 1;
+    margin-top: 300px;
+    }
+    canvas {
+        left: 20%;
+        position:absolute;
+        top: 8%;
+    }
