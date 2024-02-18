@@ -2,25 +2,54 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
 ---
-
+<!-- 
 <BaseLayout title = "Tomato Throw" sideBarActiveItemID="tomatoThrow">
   <div>
     <div class="text-3xl w-full font-bold mb-5">Tomato Throw Game!</div>
   </div>
-
-  <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="NEW"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
+  <a href="/">
+<img width="200"  src="/fruitThrowBack.svg" alt="Fruit Throw Back">
+</a>
 
 </BaseLayout>
+ -->
+
+ 
+
+
+  <!-- <div class="navbar">
+    <div class="navbar-start">
+      <label for="my-drawer" class="btn btn-square btn-ghost">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-5 h-5 stroke-current"
+          ><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </label>
+    </div>
+    <div class="navbar-center">
+      <a class="btn btn-ghost normal-case text-xl" href="/">GALILEO DYNASIM</a>
+    </div>
+    <div class="navbar-end"></div>
+  </div> -->
+  
+
+
+
+
+
+  
+<BaseLayout title="Tomato Throw" sideBarActiveItemID="tomatoThrow" style="display: flex; align-items: center; justify-content: center; position: relative;">
+    
+    <div>
+         <img  width="225" src="/galileo-logo.svg"/>
+        <a href="/" style="text-decoration: none; position: absolute; left: 304px; top:0px; padding:10px">
+            <img width="200" src="/fruitThrowBack.svg" alt="Fruit Throw Back">
+        </a>
+        <div class="text-3xl font-bold;" style="">Tomato Throw Game!</div>
+    </div>
+
+<div style="text-decoration: none; position: absolute; left: 304px; top:10; padding:20px; background-color: pink;">
+
+</div>
+
+</BaseLayout>
+

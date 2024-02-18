@@ -14,16 +14,19 @@ const { sideBarActiveItemID } = Astro.props;
       <!-- <a href="/">
         <div class="avatar transition ease-in-out hover:scale-[102%] block m-auto">
           <div class="w-[8.5rem]">
-            <Image class="mask mask-circle" format="webp" width={300} height={300} src="/profile.webp" alt="Profile image" />
+            <Image class="mask mask-circle" format="webp" width={300} height={300} src="/galileo-head.svg" alt="Profile image" />
           </div>
         </div>
       </a> -->
      <div class="inline-block"> <!-- Use inline-block to place elements on the same line -->
      <a href="/">
-        <h1 class="gear" style="display: inline;">⚙</h1> <!-- Set display to inline -->
-        <h1 class="redTitle" style="display: inline;">GALILEO</h1> <!-- Set display to inline -->
-        <h1 class="purpleTitle" style="display: inline;">DYNASIM</h1> <!-- Set display to inline -->
+      <img  width="225" src="/galileo-logo.svg"/>
+        <!-- <h1 class="gear" style="display: inline;">⚙</h1>  -->
+        <!-- <h1 class="redTitle" style="display: inline;">GALILEO</h1>  -->
+        <!-- <h1 class="purpleTitle" style="display: inline;">DYNASIM</h1> -->
         </a>
+<!-- add svg image in anchor below -->
+        <a href="/"></a>
       </div>
     </div>
     <SideBarMenu sideBarActiveItemID={sideBarActiveItemID} />
