@@ -13,7 +13,8 @@ const includeSidebar = false;
 
 
 <BaseLayout includeSidebar={false} title="Tomato Throw" sideBarActiveItemID="tomatoThrow" style="display: flex; align-items: center; justify-content: center; position: relative;">
-  
+  <script src="./matter.js"></script>
+  <script src="./logic.js"></script>
       <div  >
         <img width="225" src="/galileo-logo.svg"  style="text-decoration: none; position: absolute; left: 0; top: 0; padding: 10px;"/>
         <a href="/" style="text-decoration: none; position: absolute; left: 0; top: 8; padding: 10px;">
@@ -21,10 +22,22 @@ const includeSidebar = false;
         </a>
         <div class="text-3xl font-bold" style="">Tomato Throw Game!</div>
 
+    <link rel="stylesheet" type="text/css" href="./src/styles/style.css" />
+    <button class="button" id="btn">GO!</button>
+    <p class="text" id="para"></p>
+    <div class="slidecontainer">
+        <input type="range" min="20" max="100" value="20" class="slider" id="myRange1">
+        <p>Velocity: <span id="demo1"></span> m/s</p>  
+    <br>
+    <br>
+    <br>
+        <input type="range" min="1" max="90" value="1" class="slider" id="myRange2">
+        <p>Angle: <span id="demo2"></span> degrees</p>  
+    </div>
       </div>
 </div>
-
 </BaseLayout>
+
 
 <!-- </div> -->
 
