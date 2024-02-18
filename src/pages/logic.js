@@ -120,8 +120,30 @@ function calculateVelocityComponents() {
        
        tomato = newTomato;
    }, 2000);
+   var mark;
+
+   var impactXPos = null; // Initialize impact x-position
+   
+       Matter.Events.on(engine, 'afterUpdate', function(event) {
+           var yPos = tomato.position.y;
+           if (yPos > window.innerHeight-150 && impactXPos === null) {
+               impactXPos = tomato.position.x;
+               console.log("The ball hit the ground at x-coordinate:", impactXPos);
+                mark = Bodies.rectangle(tomato.position.x, tomato.position.y+50, 30, 20, { 
+                 render:{
+                   fillStyle: 'white',
+                   sprite: {
+                     texture:
+                     "/public/squished.svg"
+                 }
+                 },isStatic: true });
+               Composite.add(engine.world, [mark]);
+           }
+       });
+   
   };
 }
+Engine.run(engine);
 
 
         

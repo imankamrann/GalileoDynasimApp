@@ -89,6 +89,7 @@ canvas {
     height: 25px;
     background: #5B60FF;
     cursor: pointer;
+    border-radius: 50%;
 }
 
 .slidertxt {
