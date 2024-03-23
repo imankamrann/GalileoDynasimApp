@@ -104,7 +104,21 @@ function calculateVelocityComponents() {
   btn.onclick = function() {
 
     Matter.Body.setVelocity( tomato, {x: velocityX, y: -velocityY});
-
+    setTimeout(function() {
+      let newTomato = Bodies.circle(300, 500, 35,  {
+         render: {
+             sprite: {
+                 texture:
+                 "/public/tomato.svg"
+             }
+         }
+         });
+         
+         Composite.remove(engine.world, [tomato]);
+         Composite.add(engine.world, [newTomato]);
+         
+         tomato = newTomato;
+     }, 2000);
     
    var mark;
 
