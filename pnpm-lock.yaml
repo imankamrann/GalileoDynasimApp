@@ -26,6 +26,9 @@ dependencies:
   dayjs:
     specifier: ^1.11.9
     version: 1.11.9
+  matter-js:
+    specifier: ^0.19.0
+    version: 0.19.0
   sharp:
     specifier: ^0.32.6
     version: 0.32.6
@@ -2203,6 +2206,10 @@ packages:
 
   /markdown-table@3.0.3:
     resolution: {integrity: sha512-Z1NL3Tb1M9wH4XESsCDEksWoKTdlUafKc4pt0GRwjUyXaCFZ+dc3g2erqB6zm3szA2IUSi7VnPI+o/9jnxh9hw==}
+    dev: false
+
+  /matter-js@0.19.0:
+    resolution: {integrity: sha512-v2huwvQGOHTGOkMqtHd2hercCG3f6QAObTisPPHg8TZqq2lz7eIY/5i/5YUV8Ibf3mEioFEmwibcPUF2/fnKKQ==}
     dev: false
 
   /mdast-util-definitions@6.0.0:
